@@ -1,0 +1,256 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+/* MENU 1*/
+body {
+	font-family: 'Exo 2', sans-serif;
+}
+.logo img{   
+    height: 3rem;
+}
+.navbar1 {
+	background-color: #f8f9fb;
+	font-size: 14px;
+	letter-spacing: .1rem;
+	box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+	z-index: 1;
+	border: none;
+	border-radius: 0;
+	padding: 8px;
+	font-family: 'Exo 2', sans-serif;
+    font-weight: 550;
+	margin-bottom: 0px;
+}
+ul li{
+	padding-right:8px;	
+	padding-top: 3px;
+}
+.navbar1 a {
+	color: #ff8e00 !important;
+}
+.navbar1 a:hover {
+	color: #0a67a3 !important;
+}
+a.navbar-brand{
+	margin-bottom: 5px;
+}
+.icon-bar{
+	background-color: #ff8e00;
+	!important;	
+}
+.navbar-inverse .navbar-toggle {
+	background-color: none;
+    border-color: #ff8e00;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #0a67a3;
+    
+}
+.navbar-inverse .navbar-nav>.active>a{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-nav>li>.dropdown-menu{
+	background-color: #f8f9fb;
+}
+
+/* LINHA ABAIXO DO TÍTULO */
+.border-primary{
+	border-top: .2rem solid #0a67a3 !important;
+	margin-bottom: 30px;
+}
+.titulo {
+	background-color: #ff8e00;
+}
+h1.text.dark.pt-4{
+	color: #0a67a3;
+	font-size: 45px;
+	font-family: 'Exo 2', sans-serif;
+	text-shadow: 1px 1px 1px #000000;
+}
+/* CONTEUDO - FORMULARIO DE SUGESTÕES */
+.botao {
+	border-radius: 20px;
+	border: 1px solid #0a507f;
+	background-color: #0a507f;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+    box-shadow: 1px 1px 3px #000000;
+	text-shadow:   1px 1px 3px #000000;
+}
+.botao:active {
+	transform: scale(0.95);
+	background-color: #052a42;
+	border-color: #052a42;
+}
+.botao:focus {
+	outline: none;
+}
+.botao.ghost {
+	background-color: transparent;
+	border-color: #FFFFFF;
+}
+form {
+	background-color: #FFFFFF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 350px;
+	text-align: center;
+	margin-top: 60px;
+}
+input {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 10px;
+}
+textarea {
+	background-color: #eee;
+	border: none;
+	padding: 12px 15px;
+	margin: 8px 0;
+	width: 100%;
+	border-radius: 10px;
+}
+.container {
+	margin-top: 70px;
+	margin-bottom: 110px;
+	border-radius: 10px;
+  	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+			0 10px 10px rgba(0,0,0,0.22);
+	position: relative;
+	overflow: hidden;
+	width: 768px;
+	max-width: 100%;
+	min-height: 480px;
+}
+.form-container {
+	position: absolute;
+	top: 0;
+	height: 100%;
+}
+.sign-in-container {
+	left: 0;
+	width: 50%;
+	z-index: 2;
+}
+.overlay-container {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 50%;
+	height: 100%;
+	overflow: hidden;
+	z-index: 100;
+	background: linear-gradient(to right, #0A67A3, #052a42);
+}
+h3 {
+	color: white;
+	margin-top: 150px;
+	margin-left: 10px;
+	margin-right: 10px;
+	text-align: center;
+	text-shadow: 1px 1px 3px #000000;
+}
+.aviso h1{
+	color: #ff8e00;
+	font-weight: bolder;
+	text-shadow: 1px 3px 3px #000000;
+	text-align: center;
+    margin-top: 50px;
+	font-weight: bold;
+}
+
+/*AJUSTES RESPONSIVIDADE*/
+@media (max-width:280px ){
+	.overlay-container h3{
+		font-size: 18px;
+		margin-top: 15px;
+	}
+}
+
+@media (max-width:415px ){
+	.overlay-container h3{
+		font-size: 18px;
+		
+	}
+	
+}
+
+@media (max-width:320px ){
+	.overlay-container h3{
+		font-size: 18px;
+		margin-top: 40px;
+	}
+}
+
+/* RODAPÉ */
+footer{    
+	background-color: #3a3f45;
+	margin-top: 155px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: 'Exo 2', sans-serif;
+	
+}
+footer h2{
+	text-shadow: 2px 3px 1px rgba(2, 1, 1, 0.6);
+} 
+.nomes{
+	list-style-type: none;
+}
+.nomes li{
+	color: #c6cbd1;
+}
+.email{
+	list-style-type: none;
+}
+.email li{
+    color: #c6cbd1;
+}
+.midia img{
+	height: 37px;
+	width:  37px;
+    margin-top: 5px;
+    text-align: left; 	
+}
+.informacao{
+	list-style-type: none;
+}
+.informacao li{
+	color: #c6cbd1;
+}
+.registrado{
+	text-align: center;
+}
+.imagem:hover .texto{
+  opacity:1;
+}
+.final {
+	background-color: #33383e;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 25px;
+}
+
+
+
+
+
+
+
+
+			 
