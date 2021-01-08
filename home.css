@@ -1,0 +1,289 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+
+/*LOGO*/
+.logo img{
+	height: 3rem;
+}
+
+/*FUNDO*/
+body{
+	font-family:'Exo 2', sans-serif;
+}
+
+header .carousel-inner .item{
+	height:100vh;
+}
+
+/*TOPO DO MENU*/
+.navbar-inverse{
+	background-color:transparent;
+	border-color:transparent;
+}
+
+.navbar-inverse .navbar-brand{
+	color:#fff;
+	font-size:40px;
+	padding:40px 15px;
+	font-weight:900; 	
+}
+
+ /*MENU SUPERIOR*/
+.nav.navbar-nav.navbar-right{
+	margin:25px 0;                       /*POSIÇÃO/ALTURA*/
+}
+
+.navbar-inverse .navbar-nav > li > a{
+	color:#ff8e00;                         /*COR*/
+	text-transform:uppercase;
+	font-size: 14px;
+	letter-spacing: .1rem;
+	/*box-shadow: 0 .2rem .2rem rgba(0, 0, 0, .1);*/
+	z-index: 1;
+	border: none;
+	border-radius: none;
+	padding: 8px;
+}
+
+ul li{
+	padding-right:8px;	
+	padding-top: 3px;
+}
+
+.navbar-inverse .navbar-nav>.active>a{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+
+.dropdown-menu>li>a {
+    color: #ff8e00;         /*COR DO FALE CONOSCO/SOBRE NÓS*/
+	display: block;
+}
+
+.dropdown-menu>li>a:hover{
+	color:#0a67a3;          /*COR DO HOVER DO MENU*/
+}
+
+.menu .navbar-right li a:hover{
+	color:#0a67a3;
+}
+
+.menu .navbar-right li .active{
+	color:#ff8e00; 
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background-color:#dfe0e4;
+	border-radius: 10px;        /*CINZA DO MAIS ATIVADO*/
+	color:#ff8e00;
+}
+.navbar-nav>li>.dropdown-menu{
+	background-color: transparent;
+}
+
+/*MENU ROLANDO A PÁGINA*/
+.shrink{
+	background: #fff !important;
+	transition: width 2s;
+}
+
+.shrink .icon-bar{
+	background-color: #ff8e00 !important;	
+}
+
+.shrink .navbar-header button{
+	margin-top: 15px;
+}
+
+.shrink .navbar-toggle {
+	background-color: none;
+	border-color: #ff8e00 !important;
+}
+
+.shrink .dropdown-menu{
+	background: #fff !important;
+}
+
+
+/*BANNER*/
+.banner{
+	-webkit-background-size:cover;
+	background-size:cover;
+	background-position:center center;
+	background-repeat:no-repeat;
+	height:100vh;
+}
+
+/*TEXTOS*/
+.carousel-caption{
+	padding-bottom:250px;
+	font-family:'Exo 2', sans-serif;
+}
+
+.carousel-caption h2{
+	font-size:70px;
+	text-transform:uppercase;
+	font-weight:bold;
+}
+
+.carousel-caption h2 span{
+	color:#ff8e00;
+}
+
+.carousel-caption h2 .covid{
+	color:#ff8e00;
+	text-shadow:1px 1px 2px #000000;
+}
+
+.carousel-caption a{
+	font-family: 'Exo 2', sans-serif;
+	background:#ff8e00;
+	padding:15px 35px;
+	display: inline-block;
+	margin-top:15px;
+	color:#fff;
+	text-transform:uppercase;
+	border-radius:20px;
+	font-weight: bold;
+	text-decoration: none;
+
+}
+
+.carousel-caption p a:hover{
+	text-decoration:none;
+}
+
+.carousel-caption a:active {
+	transform: scale(0.95);
+	background-color: #ffaa40;
+	color:#fff;
+}
+
+/*RESPONSIVO*/
+@media only screen and (max-width:1000px){
+	.navbar-inverse .navbar-brand{
+		font-size:30px;
+		padding:20px 15px;
+	}
+
+	.navbar-collapse{
+		background:transparent;
+	}
+	
+	.carousel-caption{
+		padding-bottom: 200px;
+	}
+
+	.carousel-caption h2{
+		font-size:40px;
+	}
+
+	.carousel-caption h3{
+		font-size:20px;
+	}
+
+	.carousel-caption a{
+		padding:10px 20px;
+	}
+}
+
+.navbar-inverse .navbar-toggle {
+	background-color: none;
+    border-color: #ff8e00;       /*CONTORNO DO QUADRADO*/
+	margin-top:30px;
+}
+
+.icon-bar{
+	background-color: #ff8e00;
+
+}
+
+/*DICAS GERAIS TEXTOS*/
+.texto{
+	background-color:transparent;
+	margin-top:-20px;
+}
+
+.texto h1{
+	text-transform:uppercase;
+	color:#ff8e00;
+}
+
+.texto h2{
+	color:#0a67a3;
+}
+
+.dicas h2{
+	color:black;
+	padding:2px;
+	margin-left:30px;
+	font-weight:bold;
+	font-size: 20px;
+	margin:auto;
+	width:80%;
+}
+
+.dicas h3{
+	color:black;
+	padding:5px;
+	text-align:justify;
+	/*margin-left:30px;
+	margin-right:30px;*/
+	margin:auto;
+	font-size: 18px;
+	width:80%;
+
+}
+
+/* RODAPÉ */
+footer{    
+	background-color: #3a3f45;
+	margin-top: 70px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: 'Exo 2', sans-serif;
+	
+}
+footer h2{
+	text-shadow: 2px 3px 1px rgba(2, 1, 1, 0.6);
+} 
+.nomes{
+	list-style-type: none;
+}
+.nomes li{
+	color: #c6cbd1;
+}
+.email{
+	list-style-type: none;
+}
+.email li{
+    color: #c6cbd1;
+}
+.midia img{
+	height: 37px;
+	width:  37px;
+    margin-top: 5px;
+    text-align: left; 	
+}
+.informacao{
+	list-style-type: none;
+}
+.informacao li{
+	color: #c6cbd1;
+}
+.registrado{
+	text-align: center;
+}
+.imagem:hover .texto{
+  opacity:1;
+}
+.final {
+	background-color: #33383e;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 25px;
+}
+    
