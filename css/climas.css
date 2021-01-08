@@ -1,0 +1,362 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2);
+/* TOPO DO MENU */
+.top-bar {
+	background: #0a67a3;
+	height: 50px;
+	margin-top: 0px;
+}
+
+.top-bar a {
+	color: white;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+/* MENU 1*/
+.logo img{   
+    height: 3rem;
+}
+.navbar1 {
+	background-color: #f8f9fb;
+	font-size: 14px;
+	letter-spacing: .1rem;
+	box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+	z-index: 1;
+	border: none;
+	border-radius: 0;
+	padding: 8px;
+	font-family: 'Exo 2', sans-serif;
+    font-weight: 550;
+	margin-bottom: 0px;
+}
+ul li{
+	padding-right:8px;	
+	padding-top: 3px;
+}
+.navbar1 a {
+	color: #ff8e00 !important;
+}
+.navbar1 a:hover {
+	color: #0a67a3 !important;
+}
+a.navbar-brand{
+	margin-bottom: 5px;
+}
+.icon-bar{
+	background-color: #ff8e00
+	!important;	
+}
+.navbar-inverse .navbar-toggle {
+	background-color: none;
+    border-color: #ff8e00;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #0a67a3;
+    
+}
+.navbar-inverse .navbar-nav>.active>a{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-inverse .navbar-nav>.active>a:hover{ 
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+	background-color: #dfe0e4;
+	border-radius: 10px;
+}
+.navbar-nav>li>.dropdown-menu{
+	background-color: #f8f9fb;
+}
+/* MENU 2*/
+.navbar2 {
+	background-color: #0a67a3;
+	font-size: 14px;
+	letter-spacing: .1rem;
+	box-shadow: 0 .5rem .5rem rgba(0, 0, 0, .1);
+	z-index: 1;
+	border: none;
+	border-radius: 0;
+	padding: 8px;
+	font-family: 'Exo 2', sans-serif;
+    font-weight: 550;
+	margin-bottom: 0px;
+	margin: 0 auto;
+	width: 100%;	
+}
+.navbar2 a {
+	color: #ffffff !important;
+}
+.navbar2 a:hover{
+	color: #ff8e00 !important;
+}
+.navbar2 .active a:hover{
+	color: #fff !important;
+}
+
+.navbar2 .active a{
+	color: #fff !important;               /*cor letra do active menu 2*/              
+}   
+
+.navbar2 .navbar-collapse .navbar-nav>.active>a{ 
+	background-color: #0d5e94;                     /*cor do active menu 2*/
+	border-radius: 10px;
+}
+
+.navbar-inverse .navbar-nav>.active>a:hover{ 
+
+    border-radius: 10px;
+}
+
+.navbar2 ul li{
+	padding-right: 80px;	
+	padding-top: 3px;
+}
+.navbar2 .navbar-nav {
+   display: inline-block;
+   float: none !important;
+}
+.navbar2 .navbar-collapse {
+  text-align: center;
+}
+div#Menu2.navbar-collapse.collapse.in {
+	text-align: left;
+	border-color: #ff8e00 !important;
+}
+
+/* LINHA ABAIXO DO TÍTULO */
+.border-primary{
+	border-top: .2rem solid #0a67a3 !important;
+	margin-bottom: 30px;
+}
+
+.titulo {
+	background-color: #ff8e00;
+}
+
+h1.text.dark.pt-4{
+	color: #0a67a3;
+	font-size: 45px;
+	font-family: 'Exo 2', sans-serif;
+	text-shadow: 1px 1px 1px #000000;
+}
+
+/*CAIXAS*/
+.conteudos h1 {
+	font-size: 20px;
+	font-family: 'Exo 2', sans-serif;
+	text-shadow: 0px 1px 1px #000000;
+}
+.conteudos p{
+	font-family: 'Exo 2', sans-serif;
+    font-size: 15px;
+	margin-bottom: 6px;
+}
+
+.content{
+	position:relative;
+	padding:20px;
+	transform:tranlateY(40px);
+}
+
+.content h2{
+	position:absolute;
+	top:-20px;
+	right:20px;
+	margin:0;
+	padding:0;
+	font-size:4em;
+	transition:0.5s;
+	color:rgba(255,255,255,0.09);
+}
+
+.card .content h2{
+	margin-top:30px;
+}
+
+.card:hover .content h2{
+	margin-top:10px;
+}
+
+/*CAIXA 1*/
+
+.conteudo .card{
+    position:relative;
+    background:#ff8e00;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:1px solid orange;
+    margin-bottom: 300px;
+	padding:25px;
+}
+
+.conteudo .card:before{
+	content:'';
+    position:absolute;
+    top:-2px;
+	left:-2px;
+	right:-2px;
+    bottom:-2px;
+    transform:skew(2deg,2deg);
+	background-color:#0a67a3;
+	z-index:-1;
+}
+
+.conteudo .card:after{
+	content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    min-height:100%;
+    background:rgba(255,255,255,0.05);
+}
+
+.card .content h3{
+	margin:0 0 20px;
+	padding:0;
+	font-size:30px;
+	font-weight:500;
+	color:#0a67a3;
+	text-align:center;
+}
+
+.card .content p{
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-size:19px;
+	text-align:center;
+}  
+  
+.caixa{
+	margin-top:50px;
+	margin-bottom:-270px;
+	
+} 
+
+/*CAIXA 2*/
+.conteudo .card1{
+    position:relative;
+    background:#ff8e00;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+	border:1px solid orange;
+	margin-top:50px;
+	padding:20px;
+}
+
+.conteudo .card1:before{
+	content:'';
+    position:absolute;
+    top:-2px;
+	left:-2px;
+	right:-2px;
+    bottom:-2px;
+    transform:skew(2deg,2deg);
+	background-color:#0a67a3;
+	z-index:-1;
+}
+
+.conteudo .card1:after{
+	content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    min-height:100%;
+    background:rgba(255,255,255,0.05);
+}
+
+.card1 .content h2{
+	margin-top:30px;
+}
+
+.card1:hover .content h2{
+	margin-top:10px;
+}
+
+.card1 .content h3{
+	margin:0 0 20px;
+	padding:0;
+	font-size:30px;
+	font-weight:500;
+	color:#0a67a3;
+	text-align:center;
+}
+
+.card1 .content p{
+	margin:0;
+	padding:0;
+	color:#fff;
+	font-size:19px;
+	text-align:center;
+}
+
+/*@MEDIA PARA CAIXAS*/
+@media (max-width:700px){
+    .card .content h2{
+      display:none;
+    }
+
+    .card1 .content h2{
+        display:none;
+      }
+}
+
+/* RODAPÉ */
+footer{    
+	background-color: #3a3f45;
+	margin-top: 90px;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: 'Exo 2', sans-serif;
+	
+}
+footer h2{
+	text-shadow: 2px 3px 1px rgba(2, 1, 1, 0.6);
+} 
+.nomes{
+	list-style-type: none;
+}
+.nomes li{
+	color: #c6cbd1;
+}
+.email{
+	list-style-type: none;
+}
+.email li{
+    color: #c6cbd1;
+}
+.midia img{
+	height: 37px;
+	width:  37px;
+    margin-top: 5px;
+    text-align: left; 	
+}
+.informacao{
+	list-style-type: none;
+}
+.informacao li{
+	color: #c6cbd1;
+}
+.registrado{
+	text-align: center;
+}
+.imagem:hover .texto{
+  opacity:1;
+}
+.final {
+	background-color: #33383e;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	margin-top: 25px;
+}
+.espaco{
+	padding-right: 30px;
+    padding-left: 55px;
+}
+    
